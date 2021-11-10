@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = init;
+    
+    function init(){
+        menuItem("pizza","100g",`"delicios"`,"7$","https://lh3.googleusercontent.com/CUZjHRPZoE176ywI05wX7KIeKL_xRdOq9VYhgFByF0vdGbHKG-Gb_Y6DZRMQepaIq8syWXo=s85");
+        menuItem("burger","700g",`"spacial coraption for you"`,"12$","https://lh3.googleusercontent.com/M0IlNSZsD5rv9r7UhIPuOQ4fDsGjv8iBXrGYwFhYt1t3SXU9LCyyhopaU7eV6r0fNW9ROkI=s65");
+        menuItem("pasta","1kg",`"to feel the italian side of you"`,"16$","https://lh3.googleusercontent.com/GIGNx1gW7zm75gn43_-LwZBnEvxALcAas-NdXgvkAC4tEtY0DwGABZe9IR_TJGu1n-XKfcg=s65");
+        menuItem("falafel","500g",`"yalla eat zariz"`,"10$","https://lh3.googleusercontent.com/eV2-tWScSwpkeXk2XIvZTYvVbcPo3yPKJdzHRXEPWAy4Y0Qe0YSTOeMIQVgBWTXB9wFs0g=s86");
+       
+    }
+
+    function menuItem(product,g,rec,price,img){
+       
+     document.body.innerHTML +=
+    `
+    <div>
+    <h1>${product}</h1>
+     <h2>${g}</h2>
+     <h3>${rec}</h3>
+     <h4>${price}</h4>
+      <img src="${img}">
+     <br></div>`
+    }
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    body{
+        background: wheat;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-family: 'Architects Daughter', cursive;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    div{
+        width: 100px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        height: 330px;
+        
+    }
+    footer{
+        background-color:#f0cb88;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        
+    }
+</style>
+<body>
+   
+       
+   
+   
+    <footer>@ כל הזכויות שמורות לחיים ישראל </footer>
+</body>
+</html>
